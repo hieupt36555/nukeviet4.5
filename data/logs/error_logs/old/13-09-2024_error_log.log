@@ -1,0 +1,17 @@
+[Fri, 13 Sep 2024 16:59:40 +0700] [localhost] [::1] [Warning(2): Undefined array key 0] [FILE: /modules/demo/admin/main.php] [LINE: 22]
+[Fri, 13 Sep 2024 17:01:28 +0700] [localhost] [::1] [Warning(2): Undefined variable $query] [FILE: /modules/demo/admin/main.php] [LINE: 21]
+[Fri, 13 Sep 2024 17:01:28 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to a member function fetch() on null in G:\php\htdocs\nukeviet\modules\demo\admin\main.php:21
+Stack trace:
+#0 G:\php\htdocs\nukeviet\admin\index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/demo/admin/main.php] [LINE: 21]
+[Fri, 13 Sep 2024 17:51:50 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nukeviet4.nv4_vi_demo_config' doesn't exist in G:\php\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 G:\php\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT config_n...', NULL)
+#1 G:\php\htdocs\nukeviet\vendor\vinades\nukeviet\Cache\Files.php(208): NukeViet\Core\Database->query('SELECT config_n...')
+#2 G:\php\htdocs\nukeviet\modules\demo\functions.php(20): NukeViet\Cache\Files->db('SELECT config_n...', '', 'demo')
+#3 G:\php\htdocs\nukeviet\index.php(349): require('G:\\php\\htdocs\\n...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
+[Fri, 13 Sep 2024 17:54:57 +0700] [localhost] [::1] [Warning(2): Undefined variable $generate_page] [FILE: /modules/demo/funcs/main.php] [LINE: 17]
+[Fri, 13 Sep 2024 17:54:57 +0700] [localhost] [::1] [Warning(2): Undefined variable $row] [FILE: /modules/demo/theme.php] [LINE: 31]
